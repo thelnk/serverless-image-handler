@@ -451,11 +451,22 @@ export class ImageRequest {
     switch (imageSignature) {
       case "89504E47":
         return ContentTypes.PNG;
-      case "FFD8FFDB":
       case "FFD8FFE0":
+      case "FFD8FFE1":
+      case "FFD8FFE2":
+      case "FFD8FFE3":
+      case "FFD8FFE4":
+      case "FFD8FFE5":
+      case "FFD8FFE6":
+      case "FFD8FFE7":
+      case "FFD8FFE8":
+      case "FFD8FFE9":
+      case "FFD8FFEA":
+      case "FFD8FFEB":
+      case "FFD8FFEC":
       case "FFD8FFED":
       case "FFD8FFEE":
-      case "FFD8FFE1":
+      case "FFD8FFEF":
         return ContentTypes.JPEG;
       case "52494646":
         return ContentTypes.WEBP;
