@@ -451,6 +451,7 @@ export class ImageRequest {
     switch (imageSignature) {
       case "89504E47":
         return ContentTypes.PNG;
+      case "FFD8FFDB":
       case "FFD8FFE0":
       case "FFD8FFE1":
       case "FFD8FFE2":
